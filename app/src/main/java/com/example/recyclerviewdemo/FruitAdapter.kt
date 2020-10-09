@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import java.text.SimpleDateFormat
 import java.util.*
@@ -18,6 +19,11 @@ class FruitAdapter(val fruitList: List<Fruit>) : RecyclerView.Adapter<FruitAdapt
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.fruit_item_hor, parent, false)
+        val viewHolder = ViewHolder(view)
+        viewHolder.itemView.setOnClickListener{Toast.makeText(parent.context,"你点击了子视图",Toast.LENGTH_SHORT).show()}
+        viewHolder.fruitImage.setOnClickListener{Toast.makeText(parent.context,"你点击了图片",Toast.LENGTH_SHORT).show()}
+        viewHolder.fruitName.setOnClickListener{Toast.makeText(parent.context,"你点击了名字",Toast.LENGTH_SHORT).show()}
+        viewHolder.fruitTime.setOnClickListener{Toast.makeText(parent.context,"你点击了时间",Toast.LENGTH_SHORT).show()}
         return ViewHolder(view)
     }
 
