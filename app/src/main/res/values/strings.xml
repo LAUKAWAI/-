@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">RecyclerViewDemo</string>
+    <string name="app_name">美团首页</string>
     <string name="textview">TextView</string>
     <string name="todo">TODO</string>
+    <string name="haoping">haoping</string>
+    <string name="xiaoshou">xiaoshou</string>
+    <string name="jiage">jiage</string>
+    <string name="yuanjia">y</string>
+    <string name="youhui">youhui</string>
 </resources>
